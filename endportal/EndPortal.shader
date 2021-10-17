@@ -70,7 +70,7 @@ Shader "Custom/EndPortal"
 					//float colorCoeff = 1.0F / ((16 - j) + 1.0F);  // Real Colors (Dark and boring)
 					float colorCoeff = 2.0f / (18 - j);  // Better than real colors (Epic and based)
 
-					uv += (i.viewDir.xy / i.viewDir.z) * -1.0f * ((16 - j) - (float)_HeightOffset);  // Transforms each layer in Tangent space for an interior mapping sort of effect
+					uv += (i.viewDir.xy / i.viewDir.z) * -1.0f * ((16 - j) - (float)_HeightOffset);  // Transforms each layer in Tangent space for parallax effect
 					
 					uv.xy -= 0.5f;
 					float s = sin(radians((adjDepth * adjDepth * 4321.0f + adjDepth * 9.0f) * 2.0f));
