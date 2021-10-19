@@ -1,7 +1,6 @@
 // Auroras by nimitz 2017 (twitter: @stormoid) https://www.shadertoy.com/view/XtGGRt
 // Ported to World-Space Unity-HLSL and modified by olie304 (https://github.com/olie304)
-// This skybox shader functions on any shape skybox assuming it moves with the camera
-
+// This skybox shader uses world-space coords so that it will function on any shape skybox. It must be at the world origin to function properly
 Shader "Unlit/Aurora"
 {
     Properties
